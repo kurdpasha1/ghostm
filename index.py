@@ -121,7 +121,7 @@ def checkversion():
         version = json.load(open("DATA",'r'))['VERSION']
     except:
         sys.exit('NO VERSION IN DATA FILE. UPDATE DATA FILE.')
-    url = "https://raw.githubusercontent.com/Cxyder/equity_cracker/main/DATA"
+    url = "https://raw.githubusercontent.com/kurdpasha1/ghostm/main/DATA"
     r = requests.get(url)
     githubVersion = json.loads(r.content)['VERSION']
 
