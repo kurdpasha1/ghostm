@@ -359,7 +359,7 @@ if __name__=="__main__":
                 w3 = Web3(Web3.HTTPProvider(json.load(open("DATA", "r"))['MAIN']["RPC_NODE"]))
                 time.sleep(1)
                 if w3.isConnected():
-                   print("Miner starting... [Buidling child processes...]")
+                    print("Miner starting... [Buidling child processes...]")
                     if __name__=="__main__":
                         multiprocessing.freeze_support()
                         chk = multiprocessing.Value("i", 0, lock=False)
